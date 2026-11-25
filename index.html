@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Pricing Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="container">
+
+    <header>
+      <h1>Choose Your Plan</h1>
+      <p>Simple and affordable pricing plans.</p>
+
+      <div class="toggle">
+        <button id="monthly"
+          aria-pressed="true"
+          class="active">
+          Monthly
+        </button>
+
+        <button id="yearly"
+          aria-pressed="false">
+          Yearly
+        </button>
+      </div>
+    </header>
+
+    <section class="pricing">
+
+      <article class="card">
+        <h2>Starter</h2>
+        <p>For beginners</p>
+
+        <h3 class="price">
+          ₹<span data-monthly="199"
+                 data-yearly="1910">199</span>
+          <small class="unit">per month</small>
+        </h3>
+
+        <ul>
+          <li>1 Project</li>
+          <li>Basic Support</li>
+          <li>Community Access</li>
+          <li>Basic Analytics</li>
+          <li>Core Features</li>
+        </ul>
+
+        <button class="cta">Get Started</button>
+      </article>
+
+      <article class="card popular">
+        <span class="badge">POPULAR</span>
+
+        <h2>Pro</h2>
+        <p>For professionals</p>
+
+        <h3 class="price">
+          ₹<span data-monthly="499"
+                 data-yearly="4790">499</span>
+          <small class="unit">per month</small>
+        </h3>
+
+        <ul>
+          <li>10 Projects</li>
+          <li>Priority Support</li>
+          <li>Team Collaboration</li>
+          <li>Advanced Analytics</li>
+          <li>All Core Features</li>
+        </ul>
+
+        <button class="cta">Choose Pro</button>
+      </article>
+
+      <article class="card">
+        <h2>Team</h2>
+        <p>For organizations</p>
+
+        <h3 class="price">
+          ₹<span data-monthly="999"
+                 data-yearly="9590">999</span>
+          <small class="unit">per month</small>
+        </h3>
+
+        <ul>
+          <li>Unlimited Projects</li>
+          <li>Dedicated Support</li>
+          <li>Team Management</li>
+          <li>Custom Analytics</li>
+          <li>Advanced Controls</li>
+        </ul>
+
+        <button class="cta">Contact Us</button>
+      </article>
+
+    </section>
+
+    <p class="note">
+      Sample prices for demonstration purposes.
+    </p>
+
+  </main>
+
+</body>
+</html>
